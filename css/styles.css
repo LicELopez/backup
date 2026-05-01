@@ -8,21 +8,23 @@
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 header {
     background-color: #e8f7fd;
     height: 15vh;
+
 }
+
 
 
 
 
 .nav-link {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(0.75rem, 0.25vw, 3rem);
     color: black;
     font-weight: bold;
 }
@@ -30,8 +32,8 @@ header {
 h1 {
     text-align: center;
     font-size: max(60px, 1.2vw);
-     font-family: "Ballet", cursive;
- padding: 10px 10px 10px 10px;
+    font-family: "Ballet", cursive;
+    padding: 10px 10px 10px 10px;
 
 
 }
@@ -44,8 +46,8 @@ p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: max(18px, 1.2vw);
-    margin-top:10%;
-   
+    margin-top: 10%;
+
 }
 
 /*codigo para controlar las columnas en las secciones*/
@@ -55,29 +57,42 @@ p {
 #secundario {
     height: 70vh;
     padding: 0%;
-   
+
+}
+
+#tercero{
+    width:100%;
+    height:auto;
 }
 
 
+#poster1, #poster2, #poster3 {
+
+    width: 100%;
+    height: 100%;
+}
 
 
 
 footer {
-    background-color: #cc0505;
+    background-color: #5f0b0b;
     height: 22vh;
     padding-top: 2%;
 }
 
-#social1, #social2{
-    height: 2vh;
+#social1,
+#social2 {
+    height: 3vh;
 }
-#footerText{
+
+#footerText {
     font-size: 2vh;
-    color:white;
+    color: white;
 }
-#copyright{
+
+#copyright {
     font-size: 1vh;
-    color:white;
+    color: white;
 }
 
 
@@ -85,23 +100,24 @@ footer {
 
 #fondo-personalizado1 {
     background-image: url('../media/gordis.png');
-    background-size: cover; /* Ajusta la imagen al contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    min-height: 70vh; /* O '100vh' para pantalla completa */
+    background-size: cover;
+    /* Ajusta la imagen al contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    min-height: 70vh;
+    /* O '100vh' para pantalla completa */
 }
 
 #fondo-personalizado2 {
     background-image: url('../media/Altexis.png');
-    background-size: cover; /* Ajusta la imagen al contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    min-height: 70vh; /* O '100vh' para pantalla completa */
+    background-size: cover;
+    /* Ajusta la imagen al contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    min-height: 70vh;
+    /* O '100vh' para pantalla completa */
 }
-
-
-
-
-
-
-
