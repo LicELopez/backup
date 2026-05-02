@@ -57,6 +57,8 @@ p {
 #secundario {
     height: 70vh;
     padding: 0%;
+    background: linear-gradient(to right, #ff7e5f, #ab5310);
+    color: white;
 
 }
 
