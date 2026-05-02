@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Gordis y Altexis</title>
+    <title>Gordis y Altexis</title>
 
     <!--Codigo para llamar al archivo externo styles.css-->
 
@@ -19,7 +19,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
-<!--favicon-->
+    <!--favicon-->
     <link rel="icon" type="image/x-icon" href="./media/logo.png">
 
 </head>
@@ -42,7 +42,7 @@
                 <div class="col-12 d-flex justify-content-center">
 
 
-                  
+
                     <img style="height:10vh" src="./media/logo.png" alt="logo">
 
                 </div>
@@ -59,13 +59,13 @@
                                 <ul class="navbar-nav d-flex gap-5">
                                     <!--para quitar el bullet point-->
                                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="musica.html">Música</a></li>
-                                   
-                                    <li class="nav-item"><a class="nav-link" href="acercaNosotros.html">Integrantes</a>
+                                    <li class="nav-item"><a class="nav-link" href="musica.html">Integrantes</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="acercaNosotros.html">Música</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a>
                                     </li>
-<li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a>
+                                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a>
                                     </li>
@@ -84,7 +84,6 @@
     <!--Este es el espacio para la primera sección de la página web-->
 
 
-
     <!--p-0 es para quitar el padding-->
     <section class="container-fluid   p-0">
 
@@ -94,35 +93,57 @@
 
             <!--Hace que la imagen se centre dentro del contenedor, col-2 hace que la columna se adapte seis espacios -->
 
-            <div id="principal" class="col-12 col-md-6 container" sytle="overflow: hidden">
+            <div id="poster1" class="col-12 col-md-4 container" sytle="overflow: hidden">
 
+<video class="img-fluid w-33  " style="object-fit: cover;" controls loop autoplay muted>
+                        <source src="./media/videolatigazo.mp4" type="video/mp4">
 
-
-                <img class="img-fluid w-100 h-100" style="object-fit: cover;"
-                    src="./media/show1.png" alt="doctor">
-
+                        Your browser does not support the video tag.
+                    </video>
 
 
             </div>
+            
+
+
+
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+
+
+                <video class="img-fluid w-33  " style="object-fit: cover;" controls loop autoplay muted>
+                            <source src="./media/videogorditolindo.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video>
+
+            </div>
+
+<div id="poster2" class="col-12 col-md-4 container" sytle="overflow: hidden">
+
+
+
+             <video class="img-fluid w-33  " style="object-fit: cover;" controls loop autoplay
+                                muted>
+                                <source src="./media/videoojitosgringos.mp4" type="video/mp4">
+
+                                Your browser does not support the video tag.
+                            </video>
+
+
+            </div>
+
 
 
             <!--col-10 hace que la columna abarque seis espacios-->
-            <div id="secundario" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-
-                <span>
-
-                    <h1> Gordis y Altexis</h1>
 
 
 
-                     <p style="padding:10%"> Gordis y Altexis son dos millenials y reaguetoneros nacidos en la ciudad de Santa Ana.</br> Su musica ha creado todo un nuevo genero que combina los lamentos y gritos de Gordis con los ritmos provenientes del latigo de Altexis </p>
+        </div>
 
 
 
 
-                    </sapn>
-
-            </div>
+        </div>
 
 
 
@@ -139,6 +160,76 @@
     </section>
 
 
+
+
+    <!--p-0 es para quitar el padding-->
+    <section class="container-fluid   p-0">
+
+        <!--hace que el row centre el contenido al centro-->
+        <div class="row justify-content-center">
+
+
+            <!--Hace que la imagen se centre dentro del contenedor, col-2 hace que la columna se adapte seis espacios -->
+
+            <div id="poster1" class="col-12 col-md-4 container" sytle="overflow: hidden">
+
+
+
+                <img class="img-fluid w-100 h-100" style="object-fit: cover;" src="./media/poster1.png" alt="poster1">
+
+
+
+            </div>
+            <div id="poster2" class="col-12 col-md-4 container" sytle="overflow: hidden">
+
+
+
+                <img class="img-fluid w-100 h-100" style="object-fit: cover;" src="./media/poster2.png" alt="poster1">
+
+
+
+            </div>
+
+
+
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+
+
+                <img id="poster3" src="./media/poster3.png" alt="poster3">
+
+            </div>
+
+            <!--col-10 hace que la columna abarque seis espacios-->
+
+
+
+        </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
     <!--Ese es el espacio para el footer-->
     <footer>
         <div class="container-fluid">
@@ -149,14 +240,15 @@
                 <div class="col-12">
 
                     <span>
-                        <p id="footerText">Dirección: Texistepeque, Santa Ana, República de El Salvador Centro América <p>
+                        <p id="footerText">Dirección: Texistepeque, Santa Ana, República de El Salvador Centro América
+                        <p>
                         <p id="footerText">Telefono: (503) 777-7777
                             <br>
 
-                            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"   ><img id="social1"
+                            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img id="social1"
                                     src="./media/facebook.png" alt="facebook"></a>
 
-                            <a href="https://www.instagram.com/" target="_blank"  ><img id="social2"
+                            <a href="https://www.instagram.com/" target="_blank"><img id="social2"
                                     src="./media/instagram.png" alt="instagram"> </a>
 
                         <p id="copyright">© 2035 by Gordis y Altexis</p>
