@@ -14,94 +14,124 @@
     <link rel="icon" type="image/x-icon" href="./media/logo.png">
 
     <style>
+        /* Corrección del desbordamiento */
+        #principal,
+        #secundario {
+            height: auto !important;
+            min-height: 70vh;
+        }
+
+        #principal {
+            padding: 0 !important;
+        }
+
+        #principal img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 70vh;
+            object-fit: cover;
+        }
+
+        /* Estilos del calendario */
         .calendario-wrapper {
-            padding: 30px 40px;
+            padding: 30px 35px;
             width: 100%;
         }
 
         .calendario-titulo {
-            font-size: 1.8rem;
+            font-size: max(22px, 1.4vw) !important;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 6px;
+            text-align: center;
+            font-family: "Ballet", cursive !important;
+            margin-bottom: 4px;
+            padding: 0 !important;
         }
 
         .calendario-subtitulo {
-            font-size: 0.95rem;
+            font-size: max(11px, 0.75vw);
             letter-spacing: 1px;
-            opacity: 0.7;
-            margin-bottom: 30px;
+            opacity: 0.75;
+            margin-bottom: 24px;
+            margin-top: 0 !important;
             text-transform: uppercase;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .year-section {
-            margin-bottom: 28px;
+            margin-bottom: 22px;
         }
 
         .year-header {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
 
         .year-label {
-            font-size: 1rem;
+            font-size: max(11px, 0.75vw);
             font-weight: 700;
             letter-spacing: 3px;
             text-transform: uppercase;
+            white-space: nowrap;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .year-line {
             flex: 1;
             height: 1px;
-            opacity: 0.3;
-            background: currentColor;
+            background: rgba(255, 255, 255, 0.4);
         }
 
         .evento-card {
             display: grid;
-            grid-template-columns: 90px 1fr auto;
+            grid-template-columns: 80px 1fr auto;
             align-items: center;
-            gap: 14px;
-            padding: 12px 16px;
-            margin-bottom: 8px;
-            border-radius: 6px;
-            border-left: 3px solid currentColor;
-            background: rgba(128,128,128,0.08);
-            transition: background 0.2s;
+            gap: 10px;
+            padding: 10px 14px;
+            margin-bottom: 6px;
+            border-radius: 5px;
+            border-left: 3px solid rgba(255, 255, 255, 0.8);
+            background: rgba(0, 0, 0, 0.12);
         }
 
         .evento-card:hover {
-            background: rgba(128,128,128,0.18);
+            background: rgba(0, 0, 0, 0.22);
         }
 
         .evento-fecha {
-            font-size: 0.78rem;
+            font-size: max(10px, 0.7vw);
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
-            opacity: 0.9;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.95;
         }
 
         .evento-nombre {
-            font-size: 0.9rem;
+            font-size: max(11px, 0.75vw);
             font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .evento-lugar {
-            font-size: 0.75rem;
-            opacity: 0.6;
+            font-size: max(10px, 0.65vw);
+            opacity: 0.65;
             margin-top: 2px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .evento-hora {
-            font-size: 0.8rem;
+            font-size: max(10px, 0.7vw);
             font-weight: 700;
             letter-spacing: 1px;
-            opacity: 0.8;
+            opacity: 0.85;
             white-space: nowrap;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
@@ -139,17 +169,16 @@
     <section class="container-fluid p-0">
         <div class="row justify-content-center">
 
-            <div id="principal" class="col-12 col-md-6 container" style="overflow: hidden">
-                <img class="img-fluid w-100 h-100" style="object-fit: cover;"
-                    src="./media/show2.png" alt="calendario">
+            <div id="principal" class="col-12 col-md-6 container">
+                <img src="./media/show2.png" alt="calendario">
             </div>
 
-            <div id="secundario" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div id="secundario" class="col-12 col-md-6 d-flex justify-content-center align-items-start">
 
                 <div class="calendario-wrapper">
 
                     <div class="calendario-titulo">Calendario de Presentaciones</div>
-                    <div class="calendario-subtitulo">Gordis y Altexis · Texistepeque, Santa Ana, El Salvador</div>
+                    <p class="calendario-subtitulo">Gordis y Altexis · Texistepeque, Santa Ana, El Salvador</p>
 
                     <!-- SEMANA SANTA 2026 -->
                     <div class="year-section">
@@ -157,7 +186,6 @@
                             <span class="year-label">Semana Santa 2026</span>
                             <span class="year-line"></span>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Jue 02 Abr</div>
                             <div>
@@ -166,7 +194,6 @@
                             </div>
                             <div class="evento-hora">7:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Vie 03 Abr</div>
                             <div>
@@ -175,7 +202,6 @@
                             </div>
                             <div class="evento-hora">6:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Sáb 04 Abr</div>
                             <div>
@@ -184,7 +210,6 @@
                             </div>
                             <div class="evento-hora">8:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Dom 05 Abr</div>
                             <div>
@@ -201,7 +226,6 @@
                             <span class="year-label">Semana Santa 2027</span>
                             <span class="year-line"></span>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Jue 25 Mar</div>
                             <div>
@@ -210,7 +234,6 @@
                             </div>
                             <div class="evento-hora">7:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Vie 26 Mar</div>
                             <div>
@@ -219,7 +242,6 @@
                             </div>
                             <div class="evento-hora">6:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Sáb 27 Mar</div>
                             <div>
@@ -228,7 +250,6 @@
                             </div>
                             <div class="evento-hora">8:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Dom 28 Mar</div>
                             <div>
@@ -245,7 +266,6 @@
                             <span class="year-label">Semana Santa 2028</span>
                             <span class="year-line"></span>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Jue 13 Abr</div>
                             <div>
@@ -254,7 +274,6 @@
                             </div>
                             <div class="evento-hora">7:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Vie 14 Abr</div>
                             <div>
@@ -263,7 +282,6 @@
                             </div>
                             <div class="evento-hora">6:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Sáb 15 Abr</div>
                             <div>
@@ -272,7 +290,6 @@
                             </div>
                             <div class="evento-hora">8:00 PM</div>
                         </div>
-
                         <div class="evento-card">
                             <div class="evento-fecha">Dom 16 Abr</div>
                             <div>
